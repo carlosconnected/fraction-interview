@@ -11,3 +11,28 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Player {
+  id             Int     @id @default(autoincrement())
+  playerName     String  @unique @map("Player name")
+  position       String
+  games          Int     @map("Games")
+  atBat          Int     @map("At-bat")
+  runs           Int     @map("Runs")
+  hits           Int     @map("Hits")
+  doubles        Int     @map("Double (2B)")
+  triples        Int     @map("third baseman")
+  homeRuns       Int     @map("home run")
+  rbi            Int     @map("run batted in")
+  walks          Int     @map("a walk")
+  strikeouts     Int     @map("Strikeouts")
+  stolenBases    Int     @map("stolen base")
+  caughtStealing Int?    @map("Caught stealing")
+  avg            Float   @map("AVG")
+  obp            Float   @map("On-base Percentage")
+  slg            Float   @map("Slugging Percentage")
+  ops            Float   @map("On-base Plus Slugging")
+
+  @@map("players")
+}
+
