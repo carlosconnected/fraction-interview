@@ -20,7 +20,7 @@ The flow is:
 
 - Node 20+
 - `pnpm` (repo uses `pnpm@10.27.0`)
-- **Docker** and **Docker Compose** (used to run Postgres via the helper scripts)
+- **Docker** used to run Postgres via the helper scripts
 - Alternatively: your own Postgres instance, if you prefer not to use Docker
 
 ---
