@@ -20,12 +20,14 @@ The flow is:
 
 - Node 20+
 - `pnpm` (repo uses `pnpm@10.27.0`)
-- A running Postgres instance
+- **Docker** and **Docker Compose** (used to run Postgres via the helper scripts)
+- Alternatively: your own Postgres instance, if you prefer not to use Docker
 
 ---
 
 ### 1. Start Postgres
 
+The recommended way is via Docker using the provided script.  
 From the repo root:
 
 ```bash
